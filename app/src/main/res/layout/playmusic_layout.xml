@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/music_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:text="歌名"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/music_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/music_name"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="70dp"
+        android:text="歌手"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:id="@+id/disc"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="76dp"
+        android:layout_gravity="center"
+        android:src="@drawable/disc"/>
+
+    <RelativeLayout
+        android:id="@+id/musictime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/playOption"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/currenttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="01:34"
+            android:textColor="#ccc"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/totaltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="05:34"
+            android:textColor="#ccc"
+            android:textSize="15sp" />
+
+        <!--<SeekBar-->
+            <!--android:id="@+id/musicseekbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_toLeftOf="@id/totaltime"-->
+            <!--android:layout_toRightOf="@id/currenttime"-->
+            <!--android:paddingEnd="15dp"-->
+            <!--android:paddingStart="15dp" />-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/playOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/last_music"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/last"/>
+
+        <ImageView
+            android:id="@+id/play_music"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play"/>
+
+        <ImageView
+            android:id="@+id/pause_music"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pause"/>
+
+        <ImageView
+            android:id="@+id/next_music"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
